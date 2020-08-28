@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PublicityGh</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1" uk-slideshow="animation: push; autoplay: true; min-height: 570; max-height: 630">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <div>
+                    <div class="uk-overflow-hidden">
+                    <img src="assest/try4.jpg" alt="" uk-cover>
+                </div>
+            </div>
+                </li>
+                <li>
+                    <img src="assest/try2.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="assest/try6.jpg" alt="" uk-cover>
+                </li>
+                <li>    
+                    <img src="assest/ttry3.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+         
+            <div class="uk-position-top">
+                <div uk-sticky="animation: uk-animation-slide-top; cls-active: uk-navbar-sticky : uk-navbar-transparent; top: 200">
+
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo" href="#"><img src="assest/PUBLICITYGH.png" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@l uk-text-bold uk-text-secondary">
+                            <li ><a href="C:\Users\HP\Documents\pubweb\index.html">Home</a></li>
+                            <li class="uk-active"><a href="C:\Users\HP\Documents\pubweb\Gallery.html">Gallery</a></li>
+                            <li>
+                                <a href="#">Services</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Photography</a></li>
+                                        <li><a href="#">Videography</a></li>
+                                        <li><a href="#">Church Media Management</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Book Us</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Video</a></li>
+                                        <li><a href="#">Photo</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                       <!-- This is an anchor toggling the off-canvas -->
+            <a href="#mob-nav" class="uk-navbar-toggle  uk-hidden@l" uk-toggle uk-navbar-toggle-icon ></a>
+                </nav> 
+            </div>
+           </div>
+        </div>
+       
+        
+        <div class="uk-offcanvas-content">
+            <!-- The whole page content goes here -->
+           
+            <!-- This is the off-canvas -->
+            <div id="mob-nav" uk-offcanvas="flip: true; overlay: true;">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <div class="uk-nav uk-nav-offcanvas">
+                        <a class="uk-nav-item uk-logo" href="#"><img src="assest/PUBLICITYGH.png" alt=""></a>
+                    </div>
+                    <ul class="uk-nav uk-nav-offcanvas">
+                        <li><a href="C:\Users\HP\Documents\pubweb\index.html">Home</a></li>
+                        <li  class="uk-active"><a href="C:\Users\HP\Documents\pubweb\Gallery.html">Gallery</a></li>
+                        <li>
+                            <a href="#">Services</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Photography</a></li>
+                                    <li><a href="#">Videography</a></li>
+                                    <li><a href="#">Church Media Management</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li> 
+                            <a href="#">Book Us</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Video</a></li>
+                                    <li><a href="#">Photo</a></li>
+                                </ul>
+                            </div>
+                        </li> 
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+        </div>
+    </body>
+</html>
