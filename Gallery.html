@@ -11,30 +11,46 @@
 
     <body>
         
-        <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1" uk-slideshow="animation: push; autoplay: true; min-height: 570; max-height: 630">
+        <div class="uk-position-relative uk-visible-toggle uk-light uk-background-cover uk-background-contain" tabindex="-1" uk-slideshow="animation: push; autoplay: true">
 
-            <ul class="uk-slideshow-items">
+            <ul class="uk-slideshow-items" uk-height-viewport>
                 <li>
-                    <div>
-                    <div class="uk-overflow-hidden">
-                    <img src="assest/try4.jpg" alt="" uk-cover>
-                </div>
-            </div>
+                    <img src="assest/try41080.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="assest/try2.jpg" alt="" uk-cover>
+                    <img src="assest/try21080.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="assest/try6.jpg" alt="" uk-cover>
+                    <img src="assest/try61080.jpg" alt="" uk-cover>
                 </li>
                 <li>    
-                    <img src="assest/ttry3.jpg" alt="" uk-cover>
+                    <img src="assest/ttry31080.jpg" alt="" uk-cover>
                 </li>
             </ul>
         
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
          
+            
+
+            <div class="uk-position-bottom-center uk-position-small uk-visible@s">
+                <ul class="uk-thumbnav">
+                    <li uk-slideshow-item="1"><a href="#modal-media-image1" uk-toggle><img src="assest/try41080.jpg"  width="170"  alt=""></a></li>
+                    <li uk-slideshow-item="2"><a href="#modal-media-image2" uk-toggle><img src="assest/try21080.jpg" width="170"  alt=""></a></li>
+                    <li uk-slideshow-item="3"><a href="#modal-media-image3" uk-toggle><img src="assest/try61080.jpg" width="170"  alt=""></a></li>
+                    <li uk-slideshow-item="0"><a href="#modal-media-image4" uk-toggle><img src="assest/ttry31080.jpg" width="170"  alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="uk-position-bottom-center uk-position-small uk-hidden@s">
+                <ul class="uk-thumbnav">
+                    <li uk-slideshow-item="1"><a href="#modal-media-image1" uk-toggle><img src="assest/try41080.jpg"  width="60"  alt=""></a></li>
+                    <li uk-slideshow-item="2"><a href="#modal-media-image2" uk-toggle><img src="assest/try21080.jpg" width="60"  alt=""></a></li>
+                    <li uk-slideshow-item="3"><a href="#modal-media-image3" uk-toggle><img src="assest/try61080.jpg" width="60"  alt=""></a></li>
+                    <li uk-slideshow-item="0"><a href="#modal-media-image4" uk-toggle><img src="assest/ttry31080.jpg" width="60"  alt=""></a></li>
+                </ul>
+            </div>
+
             <div class="uk-position-top">
                 <div uk-sticky="animation: uk-animation-slide-top; cls-active: uk-navbar-sticky : uk-navbar-transparent; top: 200">
 
@@ -42,13 +58,13 @@
                     <div class="uk-navbar-left">
                         <a class="uk-navbar-item uk-logo" href="#"><img src="assest/PUBLICITYGH.png" alt=""></a>
                     </div>
-                    <div class="uk-navbar-right">
+                    <div class="uk-navbar-right uk-inline" >
                         <ul class="uk-navbar-nav uk-visible@l uk-text-bold uk-text-secondary">
                             <li ><a href="C:\Users\HP\Documents\pubweb\index.html">Home</a></li>
                             <li class="uk-active"><a href="C:\Users\HP\Documents\pubweb\Gallery.html">Gallery</a></li>
                             <li>
                                 <a href="#">Services</a>
-                                <div class="uk-navbar-dropdown">
+                                <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li class="uk-active"><a href="#">Photography</a></li>
                                         <li><a href="#">Videography</a></li>
@@ -58,10 +74,10 @@
                             </li>
                             <li>
                                 <a href="#">Book Us</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Video</a></li>
-                                        <li><a href="#">Photo</a></li>
+                                <div class="uk-navbar-dropdown uk-navbar-secondary">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav uk-navbar-secondary">
+                                        <li class="uk-active uk-text-emphasis"><a href="#">GradShoot</a></li>
+                                        <li class="uk-text-emphasis"><a href="C:\Users\HP\Documents\pubweb\contact.html">Events</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -70,18 +86,19 @@
                         </ul>
                     </div>
                        <!-- This is an anchor toggling the off-canvas -->
-            <a href="#mob-nav" class="uk-navbar-toggle  uk-hidden@l" uk-toggle uk-navbar-toggle-icon ></a>
+                      <a href="#mob-nav" class="uk-navbar-toggle  uk-hidden@l" uk-toggle uk-navbar-toggle-icon ></a>
                 </nav> 
             </div>
-           </div>
+            </div>
         </div>
+        
        
         
         <div class="uk-offcanvas-content">
             <!-- The whole page content goes here -->
            
             <!-- This is the off-canvas -->
-            <div id="mob-nav" uk-offcanvas="flip: true; overlay: true;">
+            <div id="mob-nav" uk-offcanvas="overlay: true;">
                 <div class="uk-offcanvas-bar">
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
                     <div class="uk-nav uk-nav-offcanvas">
@@ -102,17 +119,43 @@
                         </li>
                         <li> 
                             <a href="#">Book Us</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Video</a></li>
-                                    <li><a href="#">Photo</a></li>
-                                </ul>
+                                <div class="uk-navbar-dropdown uk-navbar-secondary">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav uk-navbar-secondary">
+                                        <li class="uk-active uk-text-emphasis"><a href="#">GradShoot</a></li>
+                                        <li class="uk-text-emphasis"><a href="C:\Users\HP\Documents\pubweb\contact.html">Events</a></li>
+                                    </ul>
                             </div>
                         </li> 
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+
+        <div id="modal-media-image1" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <img src="assest/try4.jpg" alt="">
+            </div>
+        </div>
+        <div id="modal-media-image2" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <img src="assest/try21080.jpg" alt="">
+            </div>
+        </div>
+        <div id="modal-media-image3" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <img src="assest/try61080.jpg" alt="">
+            </div>
+        </div>
+        <div id="modal-media-image4" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <img src="assest/ttry3.jpg" alt="">
+            </div>
         </div>
     </body>
 </html>
